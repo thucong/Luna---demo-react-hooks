@@ -15,6 +15,8 @@ function IndexProduct(props) {
   const history = useHistory();
   function AddForm() {
     setDisplayAddForm(true);
+    setDisplayUpdateForm(false);
+    setDisplayProduct(false);
   }
 
   function CloseForm() {
@@ -60,6 +62,8 @@ function IndexProduct(props) {
 
   function showFormUpdate() {
     setDisplayUpdateForm(true);
+    setDisplayProduct(false);
+    setDisplayAddForm(false);
   }
 
   function closeFormUpdate() {
@@ -88,6 +92,8 @@ function IndexProduct(props) {
 
   function showDisplayProduct() {
     setDisplayProduct(true);
+    setDisplayUpdateForm(false);
+    setDisplayAddForm(false);
   }
 
   function closeDisplayProduct() {
